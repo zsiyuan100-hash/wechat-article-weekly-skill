@@ -1,0 +1,16 @@
+# ============================================================
+# 登录态：把下面这行替换成你从 Chrome 复制的 cURL（一次性，登录后数小时~数天有效）
+#
+# 步骤：
+#  1. Chrome 打开 https://mp.weixin.qq.com/ 扫码登录
+#  2. F12 -> Network -> 刷新页面
+#  3. 点任意一个 mp.weixin.qq.com 的请求 -> 右键 -> Copy -> Copy as cURL (bash)
+#  4. 把整行粘贴到下面（保留单引号），保存
+#
+# 安全：此文件含登录凭证，已 gitignore，勿外发。
+# ============================================================
+
+curl 'https://mp.weixin.qq.com/?token=REPLACE_WITH_YOUR_TOKEN' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' \
+  -H 'Cookie: REPLACE_WITH_YOUR_FULL_COOKIE_HEADER' \
+  -H 'Referer: https://mp.weixin.qq.com/'

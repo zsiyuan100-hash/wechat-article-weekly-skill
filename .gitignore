@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Live login credentials. Keep the example file tracked.
+config/session.curl
+
+# Generated weekly artifacts and crawl logs.
+output/weekly/
+output/content_probe.json
+output/index.csv
+output/links.txt
+output/_log.jsonl
+output/_checkpoint.json
+output/*.csv
+output/*.md
+output/ima_batches/
+output/ima_review_batches/
+
+# Keep the handoff state file tracked.
+!output/ima_imported_urls.json
